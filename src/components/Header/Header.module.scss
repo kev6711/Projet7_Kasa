@@ -1,0 +1,49 @@
+@use "../../assets/variables_mixins.scss" as *;
+
+nav {
+    max-width: $main-desktop-content-width;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto;
+
+    @media (max-width: $mobile-media-querie) {
+        margin: 20px auto 27px;
+    }
+
+    img {
+        @media (max-width: $mobile-media-querie) {
+            width: 145px;
+            height: 48.88px;
+        }
+    }
+
+    ul {
+        display: flex;
+        gap: 57px;
+        list-style: none;
+        padding: unset;
+        margin: 0;
+
+        @media (max-width: $mobile-media-querie) {
+            gap: 26px;
+        }
+
+        li {
+            font-size: 24px;
+
+            @media (max-width: $mobile-media-querie) {
+                font-size: 12px;
+            }
+
+            .underlined {
+                text-decoration: underline;
+            }
+
+            a {
+                text-decoration: none;
+                color: $secondary-color;
+            }
+        }
+    }
+}

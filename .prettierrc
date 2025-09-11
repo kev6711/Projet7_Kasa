@@ -1,0 +1,13 @@
+{
+   "semi": false,
+   "tabWidth": 2,
+
+   "overrides": [
+      {
+         "files": "*.{scss,sass}",
+         "options": {
+            "tabWidth": 4
+         }
+      }
+   ]
+}
