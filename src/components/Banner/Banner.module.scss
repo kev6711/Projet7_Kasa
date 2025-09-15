@@ -1,0 +1,53 @@
+@use "../../assets/variables_mixins.scss" as *;
+
+.banner {
+    @include box-size($main-desktop-content-width, 223px);
+    background: $secondary-color;
+    border-radius: $banner-container-radius;
+    position: relative;
+
+    @media (max-width: $mobile-media-querie) {
+        height: 111px;
+        border-radius: 10px;
+    }
+
+    &__image--home,
+    &__image--apropos {
+        @include box-size(100%, 100%);
+        border-radius: $banner-container-radius;
+        object-fit: cover;
+
+        @media (max-width: $mobile-media-querie) {
+            border-radius: 10px;
+        }
+    }
+
+    &__image--home {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        opacity: 0.4;
+    }
+
+    &__image--apropos {
+        opacity: 0.7;
+    }
+
+    h2 {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        font-weight: 700;
+        font-size: 48px;
+        color: $primary-color;
+
+        @media (max-width: $mobile-media-querie) {
+            font-size: 24px;
+            left: 16px;
+        }
+        @media (max-width: 375px) {
+            max-width: 225px;
+        }
+    }
+}

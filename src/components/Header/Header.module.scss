@@ -13,8 +13,7 @@ nav {
 
     img {
         @media (max-width: $mobile-media-querie) {
-            width: 145px;
-            height: 48.88px;
+            @include box-size(145px, 48.88px);
         }
     }
 

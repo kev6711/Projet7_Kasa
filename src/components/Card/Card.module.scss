@@ -1,0 +1,60 @@
+@use "../../assets/variables_mixins.scss" as *;
+
+.card__container {
+    margin: 43px auto 50px;
+    padding: 56px 50px 43px;
+    background: $card-background-color;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    row-gap: 50px;
+    border-radius: 25px;
+
+    @media (max-width: $mobile-media-querie) {
+        margin: 22px auto 27px;
+        padding: unset;
+        background: unset;
+        border-radius: unset;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card {
+        @include box-size(calc((100% - 120px) / 3), 340px);
+        position: relative;
+
+        @media (max-width: $mobile-media-querie) {
+            @include box-size(100%, 255px);
+        }
+
+        img {
+            @include box-size(100%, 100%);
+            object-fit: cover;
+            border-radius: 10px;
+            background: linear-gradient(
+                180deg,
+                rgba(255, 255, 255, 0) 0%,
+                rgba(10, 10, 10, 0) 42%,
+                rgba(4, 4, 4, 0.205) 99.99%,
+                rgba(0, 0, 0, 0.5) 100%
+            );
+
+            @media (max-width: $mobile-media-querie) {
+                border-radius: 10px;
+            }
+        }
+
+        &__title {
+            position: absolute;
+            top: 268px;
+            left: 20px;
+            font-weight: 700;
+            font-size: 18px;
+            color: #ffffff;
+
+            @media (max-width: $mobile-media-querie) {
+                top: 188px;
+            }
+        }
+    }
+}

@@ -3,11 +3,18 @@
 $main-color: #ff6060;
 $primary-color: #ffffff;
 $secondary-color: #000000;
-$cards-background-color: #f6f6f6;
+$card-background-color: #f6f6f6;
 $host-circle-color: #c4c4c4;
 
 $main-desktop-content-width: 1240px;
 $main-mobile-content-width: 335px;
 $mobile-media-querie: 768px;
 
+$banner-container-radius: 25px;
+
 // Mixins //
+
+@mixin box-size($width, $height) {
+    width: $width;
+    height: $height;
+}
