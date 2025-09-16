@@ -18,3 +18,20 @@ $banner-container-radius: 25px;
     width: $width;
     height: $height;
 }
+
+@mixin text-font($weight, $size) {
+    font-weight: $weight;
+    font-size: $size;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-space-between-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

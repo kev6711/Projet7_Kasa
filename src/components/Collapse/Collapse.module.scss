@@ -1,0 +1,75 @@
+@use "../../assets/variables_mixins.scss" as *;
+
+.collapse {
+    margin: 38px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    @media (max-width: $mobile-media-querie) {
+        margin: 19px auto;
+        gap: 20px;
+    }
+
+    &__article--title {
+        @include flex-space-between-center;
+        padding: 10px 20px 10px 15px;
+        border-radius: 5px;
+        background-color: $main-color;
+
+        @media (max-width: $mobile-media-querie) {
+            padding: 10px;
+        }
+
+        h2 {
+            margin: 0;
+            @include text-font(700, 24px);
+            color: $primary-color;
+
+            @media (max-width: $mobile-media-querie) {
+                font-size: 13px;
+            }
+        }
+
+        button {
+            @include box-size(24px, 13.71px);
+            padding: unset;
+            background: unset;
+            border: none;
+            cursor: pointer;
+
+            @media (max-width: $mobile-media-querie) {
+                @include box-size(16px, 9.14px);
+            }
+
+            :global(.fa-solid.fa-chevron-up) {
+                font-size: 24px;
+                height: 100%;
+                color: $primary-color;
+                @include flex-center;
+                transition: transform 300ms;
+                transform: rotate(0deg);
+
+                @media (max-width: $mobile-media-querie) {
+                    font-size: 16px;
+                }
+            }
+
+            :global(.fa-solid.fa-chevron-up).open {
+                transform: rotate(-180deg);
+            }
+        }
+    }
+
+    &__article--description {
+        @include text-font(400, 18px);
+        background-color: $card-background-color;
+        margin: 0;
+        padding: 25px 28px 20px 20px;
+
+        @media (max-width: $mobile-media-querie) {
+            font-size: 12px;
+            padding: 13px 20px 19px 20px;
+        }
+    }
+}

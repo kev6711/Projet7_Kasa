@@ -1,7 +1,7 @@
 @use "../../assets/variables_mixins.scss" as *;
 
 .banner {
-    @include box-size($main-desktop-content-width, 223px);
+    @include box-size(100%, 223px);
     background: $secondary-color;
     border-radius: $banner-container-radius;
     position: relative;
@@ -34,9 +34,7 @@
     h2 {
         position: absolute;
         inset: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center;
         margin: 0;
         font-weight: 700;
         font-size: 48px;

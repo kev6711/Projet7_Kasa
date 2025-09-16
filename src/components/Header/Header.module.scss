@@ -2,9 +2,7 @@
 
 nav {
     max-width: $main-desktop-content-width;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-space-between-center;
     margin: 50px auto;
 
     @media (max-width: $mobile-media-querie) {
@@ -26,6 +24,7 @@ nav {
 
         @media (max-width: $mobile-media-querie) {
             gap: 26px;
+            text-transform: uppercase;
         }
 
         li {
