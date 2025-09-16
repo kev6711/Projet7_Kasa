@@ -1,0 +1,42 @@
+@use "../../assets/variables_mixins.scss" as *;
+
+.error-404 {
+    margin: 89px auto 139px;
+    @include flex-column-align-center(139px);
+
+    @media (max-width: $mobile-media-querie) {
+        margin: 113px auto;
+        gap: 113px;
+    }
+
+    h1,
+    h2 {
+        color: $main-color;
+        margin: 0;
+    }
+
+    h1 {
+        @include text-font(700, 288px);
+
+        @media (max-width: $mobile-media-querie) {
+            font-size: 96px;
+        }
+    }
+
+    h2 {
+        font-size: 36px;
+
+        @media (max-width: $mobile-media-querie) {
+            font-size: 18px;
+        }
+    }
+
+    a {
+        font-size: 18px;
+        color: $secondary-color;
+
+        @media (max-width: $mobile-media-querie) {
+            font-size: 14px;
+        }
+    }
+}
