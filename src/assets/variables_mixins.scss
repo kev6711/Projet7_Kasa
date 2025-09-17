@@ -42,3 +42,10 @@ $banner-container-radius: 25px;
     align-items: center;
     gap: $gap;
 }
+
+@mixin reset-button-style {
+    padding: unset;
+    background: unset;
+    border: none;
+    cursor: pointer;
+}

@@ -1,9 +1,7 @@
+import Slideshow from "../components/Slideshow/Slideshow.jsx"
+
 function Logement() {
-  return (
-    <div>
-      <h1>Page du logement</h1>
-    </div>
-  )
+    return <Slideshow />
 }
 
 export default Logement

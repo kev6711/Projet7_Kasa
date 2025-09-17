@@ -1,0 +1,70 @@
+@use "../../assets/variables_mixins.scss" as *;
+
+.slideshow {
+    margin: 0 auto 30px;
+    max-width: $main-desktop-content-width;
+    position: relative;
+    @include flex-center;
+
+    @media (max-width: $mobile-media-querie) {
+        margin-bottom: 15px;
+    }
+
+    img {
+        @include box-size(100%, 415px);
+        border-radius: 25px;
+        object-fit: cover;
+
+        @media (max-width: $mobile-media-querie) {
+            height: 255px;
+            border-radius: 10px;
+        }
+    }
+
+    &__arrow--left,
+    &__arrow--right,
+    p {
+        position: absolute;
+    }
+
+    &__arrow--left,
+    &__arrow--right {
+        @include box-size(46.68px, 79.2px);
+        @include reset-button-style;
+
+        @media (max-width: $mobile-media-querie) {
+            @include box-size(11.67px, 19.8px);
+        }
+
+        img {
+            @include box-size(100%, 100%);
+        }
+    }
+
+    &__arrow--left {
+        left: 23.36px;
+
+        @media (max-width: $mobile-media-querie) {
+            left: 5.84px;
+        }
+    }
+
+    &__arrow--right {
+        right: 25.96px;
+
+        @media (max-width: $mobile-media-querie) {
+            right: 6.49px;
+        }
+    }
+
+    p {
+        margin: 0;
+        bottom: 28px;
+        font-size: 18px;
+        color: $primary-color;
+
+        @media (max-width: $mobile-media-querie) {
+            display: none;
+        }
+    }
+}

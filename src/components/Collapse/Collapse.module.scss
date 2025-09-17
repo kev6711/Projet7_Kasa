@@ -33,10 +33,7 @@
 
         button {
             @include box-size(24px, 13.71px);
-            padding: unset;
-            background: unset;
-            border: none;
-            cursor: pointer;
+            @include reset-button-style;
 
             @media (max-width: $mobile-media-querie) {
                 @include box-size(16px, 9.14px);

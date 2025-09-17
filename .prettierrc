@@ -1,16 +1,16 @@
 {
-   "semi": false,
-   "tabWidth": 4,
-   "printWidth": 120,
-   "bracketSameLine": true,
-   "singleAttributePerLine": false,
+    "semi": false,
+    "tabWidth": 4,
+    "printWidth": 120,
+    "bracketSameLine": true,
+    "singleAttributePerLine": false,
 
-   "overrides": [
-      {
-         "files": "*.{scss,sass}",
-         "options": {
-            "tabWidth": 4
-         }
-      }
-   ]
+    "overrides": [
+        {
+            "files": "*.{scss,sass}",
+            "options": {
+                "tabWidth": 4
+            }
+        }
+    ]
 }
