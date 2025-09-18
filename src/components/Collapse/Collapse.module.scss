@@ -2,9 +2,7 @@
 
 .collapse {
     margin: 38px auto;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+    @include flex-column(30px);
 
     @media (max-width: $mobile-media-querie) {
         margin: 19px auto;

@@ -16,8 +16,7 @@ nav {
     }
 
     ul {
-        display: flex;
-        gap: 57px;
+        @include flex(57px);
         list-style: none;
         padding: unset;
         margin: 0;

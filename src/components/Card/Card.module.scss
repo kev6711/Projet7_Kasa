@@ -15,8 +15,7 @@
         padding: unset;
         background: unset;
         border-radius: unset;
-        flex-direction: column;
-        gap: 20px;
+        @include flex-column(20px);
     }
 
     a {

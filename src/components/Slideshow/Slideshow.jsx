@@ -1,19 +1,11 @@
 import styles from "./Slideshow.module.scss"
 import arrow_left from "../../assets/arrow_left.png"
 import arrow_right from "../../assets/arrow_right.png"
-import logements from "../../assets/logements.json"
-import { useParams } from "react-router-dom"
 import { useState } from "react"
 
-function Slideshow() {
+function Slideshow({ logementObject, logementTitle }) {
     let [i, setI] = useState(0)
-    const { id } = useParams()
-    const logementArray = logements.filter(function (logement) {
-        return logement.id === id
-    })
-    const logementObject = logementArray[0]
     const logementPictures = logementObject.pictures
-    const logementTitle = logementObject.title
 
     return (
         <section className={styles.slideshow}>
