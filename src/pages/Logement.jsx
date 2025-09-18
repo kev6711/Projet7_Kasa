@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom"
+import { Navigate, useParams } from "react-router-dom"
 import logements from "../assets/logements.json"
 import LogementInformations from "../components/LogementInformations/LogementInformations.jsx"
 import Slideshow from "../components/Slideshow/Slideshow.jsx"
@@ -9,6 +9,9 @@ function Logement() {
         return logement.id === id
     })
     const logementObject = logementArray[0]
+    if (!logementObject) {
+        return <Navigate to="/404" />
+    }
     const logementTitle = logementObject.title
     return (
         <div>
