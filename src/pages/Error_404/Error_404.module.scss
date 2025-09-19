@@ -9,13 +9,13 @@
         gap: 113px;
     }
 
-    h1,
-    h2 {
+    h2,
+    h3 {
         color: $main-color;
         margin: 0;
     }
 
-    h1 {
+    h2 {
         @include text-font(700, 288px);
 
         @media (max-width: $mobile-media-querie) {
@@ -23,7 +23,7 @@
         }
     }
 
-    h2 {
+    h3 {
         font-size: 36px;
 
         @media (max-width: $mobile-media-querie) {

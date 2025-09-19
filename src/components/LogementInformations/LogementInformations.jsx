@@ -14,7 +14,7 @@ function LogementInformations({ logementObject, logementTitle }) {
         <section className={styles.informations}>
             <div className={styles["informations__main-content"]}>
                 <div>
-                    <h1>{logementTitle}</h1>
+                    <h2>{logementTitle}</h2>
                     <p className={styles["informations__location"]}>{logementLocation}</p>
                     <div className={styles["informations__tags"]}>
                         {logementTags.map((tag) => (

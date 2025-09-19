@@ -1,10 +1,17 @@
+@use "./assets/variables_mixins.scss" as *;
+
 :root {
-  font-family: "Montserrat";
-  font-weight: 500;
-  color: #000000;
-  background-color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 500;
+    color: $secondary-color;
+    background-color: $primary-color;
 }
 
 body {
-  margin: auto;
+    margin: auto;
+}
+
+main {
+    max-width: $main-desktop-content-width;
+    margin: auto;
 }

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 function Card() {
     return (
         <section className={styles["card__container"]}>
-            {logements.slice(0, 6).map((logement) => (
+            {logements.map((logement) => (
                 <Link key={logement.id} to={`/logement/${logement.id}`}>
                     <article className={styles.card}>
                         <img src={logement.cover} alt={logement.title} />

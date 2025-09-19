@@ -14,10 +14,10 @@ function Logement() {
     }
     const logementTitle = logementObject.title
     return (
-        <div>
+        <main>
             <Slideshow logementObject={logementObject} logementTitle={logementTitle} />
             <LogementInformations logementObject={logementObject} logementTitle={logementTitle} />
-        </div>
+        </main>
     )
 }
 
