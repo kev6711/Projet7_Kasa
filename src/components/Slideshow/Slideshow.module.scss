@@ -1,8 +1,7 @@
-@use "../../assets/variables_mixins.scss" as *;
+@use "../../assets/scss/variables_mixins.scss" as *;
 
 .slideshow {
-    margin: 0 auto 30px;
-    max-width: $main-desktop-content-width;
+    margin: 0 auto 24px;
     position: relative;
     @include flex-center;
 

@@ -1,4 +1,4 @@
-@use "../../assets/variables_mixins.scss" as *;
+@use "../../assets/scss/variables_mixins.scss" as *;
 
 footer {
     @include flex-column-align-center(47px);

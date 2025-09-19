@@ -13,7 +13,7 @@ function LogementInformations({ logementObject, logementTitle }) {
     return (
         <section className={styles.informations}>
             <div className={styles["informations__main-content"]}>
-                <div>
+                <div className={styles["informations__left-container"]}>
                     <h2>{logementTitle}</h2>
                     <p className={styles["informations__location"]}>{logementLocation}</p>
                     <div className={styles["informations__tags"]}>
@@ -24,7 +24,7 @@ function LogementInformations({ logementObject, logementTitle }) {
                         ))}
                     </div>
                 </div>
-                <div className={styles["informations__right--container"]}>
+                <div className={styles["informations__right-container"]}>
                     <div className={styles["informations__host"]}>
                         <p className={styles["informations__host--name"]}>{logementHostName}</p>
                         <img

@@ -1,5 +1,5 @@
 import { Navigate, useParams } from "react-router-dom"
-import logements from "../assets/logements.json"
+import logements from "../assets/data/logements.json"
 import LogementInformations from "../components/LogementInformations/LogementInformations.jsx"
 import Slideshow from "../components/Slideshow/Slideshow.jsx"
 

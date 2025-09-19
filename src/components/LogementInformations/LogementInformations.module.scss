@@ -1,8 +1,7 @@
-@use "../../assets/variables_mixins.scss" as *;
+@use "../../assets/scss/variables_mixins.scss" as *;
 
 .informations {
     margin: 0 auto 50px;
-    max-width: $main-desktop-content-width;
 
     @media (max-width: $mobile-media-querie) {
         margin-bottom: 27px;
@@ -10,8 +9,6 @@
 
     &__main-content {
         display: flex;
-        justify-content: space-between;
-        align-items: baseline;
 
         @media (max-width: $mobile-media-querie) {
             @include flex-column(16px);
@@ -26,6 +23,10 @@
                 font-size: 18px;
             }
         }
+    }
+
+    &__left-container {
+        width: 100%;
     }
 
     &__location {
@@ -48,21 +49,20 @@
             background-color: $main-color;
             border-radius: 10px;
             margin: 0;
-            padding: 0 30px;
+            padding: 0 12px;
             @include flex-center;
 
             @media (max-width: $mobile-media-querie) {
                 font-size: 10px;
                 height: 18px;
                 border-radius: 5px;
-                padding: 0 25px;
+                padding: 0 6px;
             }
         }
     }
 
-    &__right--container {
+    &__right-container {
         @include flex-column(27px);
-        justify-content: space-between;
         align-items: end;
         width: 100%;
 

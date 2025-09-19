@@ -1,7 +1,7 @@
-@use "../../assets/variables_mixins.scss" as *;
+@use "../../assets/scss/variables_mixins.scss" as *;
 
 .collapse {
-    margin: 38px auto;
+    margin: 38px 108.5px;
     @include flex-column(30px);
 
     @media (max-width: $mobile-media-querie) {

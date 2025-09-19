@@ -1,4 +1,4 @@
-import logements from "../../assets/logements.json"
+import logements from "../../assets/data/logements.json"
 import styles from "./Card.module.scss"
 import { Link } from "react-router-dom"
 

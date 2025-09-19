@@ -1,4 +1,4 @@
-@use "../../assets/variables_mixins.scss" as *;
+@use "../../assets/scss/variables_mixins.scss" as *;
 
 .error-404 {
     margin: 89px auto 139px;
@@ -25,6 +25,7 @@
 
     h3 {
         font-size: 36px;
+        text-align: center;
 
         @media (max-width: $mobile-media-querie) {
             font-size: 18px;

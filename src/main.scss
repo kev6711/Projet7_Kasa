@@ -1,4 +1,4 @@
-@use "./assets/variables_mixins.scss" as *;
+@use "./assets/scss/variables_mixins.scss" as *;
 
 :root {
     font-family: "Montserrat";
@@ -9,9 +9,13 @@
 
 body {
     margin: auto;
+    min-width: $min-width-mobile;
 }
 
 main {
-    max-width: $main-desktop-content-width;
-    margin: auto;
+    margin: 0 100px;
+
+    @media (max-width: $mobile-media-querie) {
+        margin: 0 20px;
+    }
 }

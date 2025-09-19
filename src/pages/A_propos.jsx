@@ -1,5 +1,5 @@
 import Banner from "../components/Banner/Banner.jsx"
-import bannerAproposImage from "../assets/a_propos-banner-image.png"
+import bannerAproposImage from "../assets/images/a_propos-banner-image.png"
 import bannerStyles from "../components/Banner/Banner.module.scss"
 import Collapse from "../components/Collapse/Collapse.jsx"
 

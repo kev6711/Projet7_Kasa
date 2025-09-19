@@ -1,5 +1,5 @@
 import Banner from "../components/Banner/Banner.jsx"
-import bannerHomeImage from "../assets/home-banner-image.png"
+import bannerHomeImage from "../assets/images/home-banner-image.png"
 import bannerStyles from "../components/Banner/Banner.module.scss"
 import Card from "../components/Card/Card.jsx"
 

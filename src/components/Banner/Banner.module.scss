@@ -1,4 +1,4 @@
-@use "../../assets/variables_mixins.scss" as *;
+@use "../../assets/scss/variables_mixins.scss" as *;
 
 .banner {
     @include box-size(100%, 223px);
