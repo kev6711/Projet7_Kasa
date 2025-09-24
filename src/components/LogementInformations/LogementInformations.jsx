@@ -5,6 +5,7 @@ function LogementInformations({ logementObject, logementTitle }) {
     const logementLocation = logementObject.location
     const logementTags = logementObject.tags
     const logementHostName = logementObject.host.name
+    const [first, ...rest] = logementHostName.trim().split(/\s+/)
     const logementHostPicture = logementObject.host.picture
     const logementRating = logementObject.rating
     const logementDescription = logementObject.description
@@ -26,7 +27,15 @@ function LogementInformations({ logementObject, logementTitle }) {
                 </div>
                 <div className={styles["informations__right-container"]}>
                     <div className={styles["informations__host"]}>
-                        <p className={styles["informations__host--name"]}>{logementHostName}</p>
+                        <p className={styles["informations__host--name"]}>
+                            {first}
+                            {rest.length ? (
+                                <>
+                                    <br />
+                                    {rest.join(" ")}
+                                </>
+                            ) : null}
+                        </p>
                         <img
                             className={styles["informations__host--picture"]}
                             src={logementHostPicture}
