@@ -1,4 +1,4 @@
-import { CollapseArticle } from "../Collapse/Collapse"
+import Collapse from "../Collapse/Collapse.jsx"
 import styles from "./LogementInformations.module.scss"
 
 function LogementInformations({ logementObject, logementTitle }) {
@@ -53,8 +53,8 @@ function LogementInformations({ logementObject, logementTitle }) {
                 </div>
             </div>
             <div className={styles["informations__collapse"]}>
-                <CollapseArticle title="Description" description={logementDescription} />
-                <CollapseArticle
+                <Collapse title="Description" description={logementDescription} />
+                <Collapse
                     title="Équipements"
                     description={logementEquipments.map((equipment) => (
                         <li key={equipment}>{equipment}</li>
